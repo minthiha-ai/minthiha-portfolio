@@ -1,4 +1,5 @@
 import { FloatingNav } from '@/components/ui/floating-navbar';
+import { BackToTop } from '@/components/ui/BackToTop';
 import Hero from '../components/Hero';
 import Grid from '@/components/Grid';
 import { navItems } from '@/data';
@@ -15,6 +16,7 @@ export default function Home() {
                     navItems={navItems}
                 />
                 <Hero />
+                <BackToTop />
                 <Grid />
                 <Experience />
                 <RecentProjects />

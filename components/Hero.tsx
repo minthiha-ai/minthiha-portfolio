@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/text-generate-effect'
@@ -57,13 +58,14 @@ const Hero = () => {
                         ))}
                     </div>
 
-                    <a href="#projects" className="group">
+                    <div className="group">
                         <MagicButton
                             title="See my work"
                             icon={<FaLocationArrow className="group-hover:translate-x-1 transition-transform" />}
                             position="right"
+                            handleClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
                         />
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
